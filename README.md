@@ -8,5 +8,9 @@ Delivers email formatted with d3 charts and visualizations for the required mate
 ## Dev Notes
 
 ### Starting the Server
-npm install
-node index.js
+* npm install
+* node index.js
+
+
+## Meeting Notes - 3/10/16
+-- To Add
