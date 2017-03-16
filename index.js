@@ -45,9 +45,6 @@ app.post('/form', function(req, res){
     console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
 });
 
-
-
-
 // ** Start Server ** //
 
 var PORT = 3001;
