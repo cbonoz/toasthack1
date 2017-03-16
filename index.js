@@ -27,6 +27,24 @@ app.use(cors())
 // ** Routes ** //
 
 
+//tell express what to do when the /about route is requested
+app.post('/form', function(req, res){
+    res.setHeader('Content-Type', 'application/json');
+
+    //mimic a slow network connection
+    setTimeout(function(){
+
+        res.send(JSON.stringify({
+            firstName: req.body.firstName || null,
+            lastName: req.body.lastName || null
+        }));
+
+    }, 1000)
+
+    //debugging output for the terminal
+    console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
+});
+
 
 
 
